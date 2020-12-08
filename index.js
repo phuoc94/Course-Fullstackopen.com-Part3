@@ -104,8 +104,7 @@ app.post('/api/persons', (request, response) => {
         number: body.number,
         id: generateId(10),
     }
-    newPerson = persons.concat(person)
-    response.json(newPerson)
+    response.json(person)
 })
 
 
